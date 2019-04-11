@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421252FC225FAE4D00B65147 /* VeriffSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421252FB225FAE4D00B65147 /* VeriffSession.swift */; };
+		42125300225FC0E200B65147 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421252FF225FC0E200B65147 /* Constants.swift */; };
+		42125302225FC10D00B65147 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42125301225FC10D00B65147 /* NetworkManager.swift */; };
+		42125304225FC65000B65147 /* SwipeCloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42125303225FC65000B65147 /* SwipeCloseViewController.swift */; };
+		4272AAC9225B690200432876 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAC8225B690200432876 /* LoginViewController.swift */; };
+		4272AACB225B691800432876 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AACA225B691800432876 /* SignupViewController.swift */; };
+		4272AACD225B6CF500432876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AACC225B6CF500432876 /* Extensions.swift */; };
+		4272AACF225B711C00432876 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AACE225B711C00432876 /* Coordinator.swift */; };
+		4272AAD1225B714100432876 /* StartupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAD0225B714100432876 /* StartupCoordinator.swift */; };
+		4272AAD3225B7A6C00432876 /* LoginSignupSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */; };
+		4272AAD5225B805100432876 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4272AAD4225B805100432876 /* GoogleService-Info.plist */; };
+		4272AAD7225B898800432876 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAD6225B898800432876 /* CarsListViewController.swift */; };
 		42EEE357225B36730038659F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE356225B36730038659F /* AppDelegate.swift */; };
-		42EEE359225B36730038659F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE358225B36730038659F /* ViewController.swift */; };
+		42EEE359225B36730038659F /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE358225B36730038659F /* StartupViewController.swift */; };
 		42EEE35C225B36730038659F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EEE35A225B36730038659F /* Main.storyboard */; };
 		42EEE35E225B36750038659F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EEE35D225B36750038659F /* Assets.xcassets */; };
 		42EEE361225B36750038659F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EEE35F225B36750038659F /* LaunchScreen.storyboard */; };
 		42EEE36C225B36750038659F /* RentacarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE36B225B36750038659F /* RentacarTests.swift */; };
 		42EEE377225B36750038659F /* RentacarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE376225B36750038659F /* RentacarUITests.swift */; };
-		A8527F43C7073243FE38C7E4 /* libPods-Rentacar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7281BD7E8598BFC68D2B9A4C /* libPods-Rentacar.a */; };
+		9725D85D107EE22911816DF0 /* Pods_Rentacar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13817B9EF2812FBA418848D7 /* Pods_Rentacar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +47,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13817B9EF2812FBA418848D7 /* Pods_Rentacar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rentacar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421252FB225FAE4D00B65147 /* VeriffSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriffSession.swift; sourceTree = "<group>"; };
+		421252FF225FC0E200B65147 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42125301225FC10D00B65147 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		42125303225FC65000B65147 /* SwipeCloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCloseViewController.swift; sourceTree = "<group>"; };
+		4272AAC8225B690200432876 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4272AACA225B691800432876 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		4272AACC225B6CF500432876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4272AACE225B711C00432876 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4272AAD0225B714100432876 /* StartupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupCoordinator.swift; sourceTree = "<group>"; };
+		4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupSelectionViewController.swift; sourceTree = "<group>"; };
+		4272AAD4225B805100432876 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4272AAD6225B898800432876 /* CarsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
 		42EEE353225B36730038659F /* Rentacar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rentacar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EEE356225B36730038659F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42EEE358225B36730038659F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42EEE358225B36730038659F /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
 		42EEE35B225B36730038659F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42EEE35D225B36750038659F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42EEE360225B36750038659F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +73,6 @@
 		42EEE372225B36750038659F /* RentacarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentacarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EEE376225B36750038659F /* RentacarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentacarUITests.swift; sourceTree = "<group>"; };
 		42EEE378225B36750038659F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7281BD7E8598BFC68D2B9A4C /* libPods-Rentacar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rentacar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E713CE5F97A0F012AD4EE7 /* Pods-Rentacar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentacar.release.xcconfig"; path = "Target Support Files/Pods-Rentacar/Pods-Rentacar.release.xcconfig"; sourceTree = "<group>"; };
 		EE9CDAA5B65A9EA1328D9949 /* Pods-Rentacar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentacar.debug.xcconfig"; path = "Target Support Files/Pods-Rentacar/Pods-Rentacar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8527F43C7073243FE38C7E4 /* libPods-Rentacar.a in Frameworks */,
+				9725D85D107EE22911816DF0 /* Pods_Rentacar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +129,19 @@
 			isa = PBXGroup;
 			children = (
 				42EEE356225B36730038659F /* AppDelegate.swift */,
-				42EEE358225B36730038659F /* ViewController.swift */,
+				42EEE358225B36730038659F /* StartupViewController.swift */,
+				4272AAC8225B690200432876 /* LoginViewController.swift */,
+				4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */,
+				4272AAD0225B714100432876 /* StartupCoordinator.swift */,
+				4272AACA225B691800432876 /* SignupViewController.swift */,
+				421252FB225FAE4D00B65147 /* VeriffSession.swift */,
+				42125303225FC65000B65147 /* SwipeCloseViewController.swift */,
+				4272AAD6225B898800432876 /* CarsListViewController.swift */,
+				4272AACC225B6CF500432876 /* Extensions.swift */,
+				421252FF225FC0E200B65147 /* Constants.swift */,
+				4272AACE225B711C00432876 /* Coordinator.swift */,
+				42125301225FC10D00B65147 /* NetworkManager.swift */,
+				4272AAD4225B805100432876 /* GoogleService-Info.plist */,
 				42EEE35A225B36730038659F /* Main.storyboard */,
 				42EEE35D225B36750038659F /* Assets.xcassets */,
 				42EEE35F225B36750038659F /* LaunchScreen.storyboard */,
@@ -138,14 +174,13 @@
 				EE9CDAA5B65A9EA1328D9949 /* Pods-Rentacar.debug.xcconfig */,
 				78E713CE5F97A0F012AD4EE7 /* Pods-Rentacar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		ECDCA0A5D96D1DD69A32FDE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7281BD7E8598BFC68D2B9A4C /* libPods-Rentacar.a */,
+				13817B9EF2812FBA418848D7 /* Pods_Rentacar.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +196,7 @@
 				42EEE34F225B36730038659F /* Sources */,
 				42EEE350225B36730038659F /* Frameworks */,
 				42EEE351225B36730038659F /* Resources */,
+				18E2EC49FC055287DBC1B856 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +294,7 @@
 				42EEE361225B36750038659F /* LaunchScreen.storyboard in Resources */,
 				42EEE35E225B36750038659F /* Assets.xcassets in Resources */,
 				42EEE35C225B36730038659F /* Main.storyboard in Resources */,
+				4272AAD5225B805100432876 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +315,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18E2EC49FC055287DBC1B856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rentacar/Pods-Rentacar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${PODS_ROOT}/VeriffSDK/Veriff.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Veriff.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rentacar/Pods-Rentacar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		82333AA95C1E9C7F434D5BAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,8 +370,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EEE359225B36730038659F /* ViewController.swift in Sources */,
+				42125302225FC10D00B65147 /* NetworkManager.swift in Sources */,
+				421252FC225FAE4D00B65147 /* VeriffSession.swift in Sources */,
+				42125300225FC0E200B65147 /* Constants.swift in Sources */,
+				4272AACD225B6CF500432876 /* Extensions.swift in Sources */,
+				4272AAC9225B690200432876 /* LoginViewController.swift in Sources */,
+				4272AACF225B711C00432876 /* Coordinator.swift in Sources */,
+				42125304225FC65000B65147 /* SwipeCloseViewController.swift in Sources */,
+				42EEE359225B36730038659F /* StartupViewController.swift in Sources */,
+				4272AACB225B691800432876 /* SignupViewController.swift in Sources */,
 				42EEE357225B36730038659F /* AppDelegate.swift in Sources */,
+				4272AAD1225B714100432876 /* StartupCoordinator.swift in Sources */,
+				4272AAD7225B898800432876 /* CarsListViewController.swift in Sources */,
+				4272AAD3225B7A6C00432876 /* LoginSignupSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +560,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ4764U822;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
+					"\"${PODS_ROOT}/Headers/Public/Parse\"",
+					"${PODS_ROOT}",
+				);
 				INFOPLIST_FILE = Rentacar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,6 +586,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ4764U822;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Bolts\"",
+					"\"${PODS_ROOT}/Headers/Public/Parse\"",
+					"${PODS_ROOT}",
+				);
 				INFOPLIST_FILE = Rentacar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

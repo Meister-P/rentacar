@@ -1,4 +1,7 @@
+use_frameworks!
+
+
 target 'Rentacar' do
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
+  pod 'VeriffSDK', '~> 2.0.0'
+  pod 'Parse'
 end
