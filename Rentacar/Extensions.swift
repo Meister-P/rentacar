@@ -29,6 +29,18 @@ extension UIStoryboard {
     }
 }
 
+extension Date {
+    func dateInNumberOfMinutes(_ minutes: Int) -> Date {
+        return self.addingTimeInterval(60 * Double(minutes))
+    }
+    
+    var isFuture: Bool {
+        let now = Date()
+        
+        return self > now
+    }
+}
+
 extension UIViewController {
     class func getInstance<T: UIViewController>() -> T {
         return UIStoryboard.mainStoryboard().instantiateViewController(withIdentifier: className) as! T

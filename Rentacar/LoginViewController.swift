@@ -9,19 +9,15 @@
 import UIKit
 
 class LoginViewModel {
-    var requestFinishedWithError: ((Error) -> ())?
-    var userLoggedInSuccessfully: (() -> ())?
+    var userLoggedInSuccessfully: ((User) -> ())?
+    var requestFinishedWithErrorString: ((String) -> ())?
     
     func tryLogin(email: String, password: String) {
-//        Auth.auth().signIn(withEmail: email, password: password) { [weak self]
-//            result, error in
-//
-//            if let error = error {
-//                self?.requestFinishedWithError?(error)
-//            } else if let user = result?.user {
-//                self?.userLoggedInSuccessfully?(user)
-//            }
-//        }
+        if let user = User.signInUserWith(email: email, password: password) {
+            self.userLoggedInSuccessfully?(user)
+        } else {
+            self.requestFinishedWithErrorString?("User not found")
+        }
     }
 }
 
@@ -50,16 +46,20 @@ class LoginViewController: SwipeCloseViewController, UITextFieldDelegate {
         swipeDown.direction = .down
         view.addGestureRecognizer(swipeDown)
         
-        viewModel.requestFinishedWithError = {
-            error in
-            
-            self.activityIndicator.isHidden = true
-            self.showErrorAlert(error.localizedDescription)
+        viewModel.requestFinishedWithErrorString = { [weak self] errorString in
+            self?.activityIndicator.isHidden = true
+            self?.showErrorAlert(errorString)
         }
         
-        viewModel.userLoggedInSuccessfully = {
-            self.activityIndicator.isHidden = true
+        viewModel.userLoggedInSuccessfully = { [weak self] _ in
+            self?.activityIndicator.isHidden = true
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        textFieldEmail.becomeFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -70,5 +70,22 @@ class LoginViewController: SwipeCloseViewController, UITextFieldDelegate {
         }
         
         return true
+    }
+    
+    @IBAction func buttonPressedLogin() {
+        guard (textFieldEmail.text!.count > 0 && textFieldEmail.text!.contains("@")) else {
+            textFieldEmail.shake()
+            
+            return
+        }
+        
+        guard textFieldPassword.text!.count > 0 else {
+            textFieldPassword.shake()
+            
+            return
+        }
+        
+        activityIndicator.isHidden = false
+        viewModel.tryLogin(email: textFieldEmail.text!, password: textFieldPassword.text!)
     }
 }

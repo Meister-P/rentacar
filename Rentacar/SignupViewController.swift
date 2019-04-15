@@ -9,32 +9,26 @@
 import UIKit
 import Veriff
 
-class SignupViewModel: VeriffDelegate {
-    var requestFinishedWithError: ((Error) -> ())?
+class SignupViewModel: NSObject, VeriffDelegate {
+    var requestFinishedWithErrorString: ((String) -> ())?
     var userSignupFinishedSuccessfully: (() -> ())?
     
     func signupUser(firstName: String, lastName: String, email: String, password: String) {
-        //        Auth.auth().createUser(withEmail: email, password: password) {
-        //            authResult, error in
-        
-        //            if let error = error {
-        //                self.requestFinishedWithError?(error)
-        //            } else if let user = authResult?.user {
-        //                self.databaseReference.child("users/\(user.uid)/firstName").setValue(firstName)
-        //                self.databaseReference.child("users/\(user.uid)/lastName").setValue(lastName)
-        
-        self.userSignupFinishedSuccessfully?()
-        // self.startVeriffSession(firstName: firstName, lastName: lastName)
+        if let _ = User.findUserWith(email: email) {
+            requestFinishedWithErrorString?("A user with this email already exists")
+        } else {
+            dataStore.createNewUserWith(firstName: firstName, lastName: lastName, email: email, password: password)
+            self.userSignupFinishedSuccessfully?()
+            // self.startVeriffSession(firstName: firstName, lastName: lastName)
+        }
     }
-    
-    
     
     private func startVeriffSession(firstName: String, lastName: String) {
         NetworkManager.startVeriffSession(firstName: firstName, lastName: lastName) { [weak self]
             session, error in
             
             if let error = error {
-                self?.requestFinishedWithError?(error)
+                self?.requestFinishedWithErrorString?(error.localizedDescription)
             } else if let session = session {
                 self?.verifyUserAfterSignup(veriffSession: session)
             }
@@ -102,11 +96,11 @@ class SignupViewController: SwipeCloseViewController, UITextFieldDelegate {
         textFieldPassword.returnKeyType = .done
         textFieldPassword.delegate = self
         
-        viewModel.requestFinishedWithError = {
+        viewModel.requestFinishedWithErrorString = {
             error in
             
             self.activityIndicator.isHidden = true
-            self.showErrorAlert(error.localizedDescription)
+            self.showErrorAlert(error)
         }
         
         viewModel.userSignupFinishedSuccessfully = {
@@ -118,20 +112,16 @@ class SignupViewController: SwipeCloseViewController, UITextFieldDelegate {
         view.addGestureRecognizer(swipeDown)
         
         // debug
-        textFieldFirstName.text = "Mikk"
-        textFieldLastName.text = "Pavelson"
-        textFieldEmail.text = "mikk.pavelson@gmail.com"
-        textFieldPassword.text = "password"
+//        textFieldFirstName.text = "Mikk"
+//        textFieldLastName.text = "Pavelson"
+//        textFieldEmail.text = "mikk.pavelson@gmail.com"
+//        textFieldPassword.text = "password"
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        if let _ = Auth.auth().currentUser {
-//
-//        } else {
-            textFieldFirstName.becomeFirstResponder()
-//        }
+        textFieldFirstName.becomeFirstResponder()
     }
     
     // MARK: - Text field delegate
@@ -165,7 +155,7 @@ class SignupViewController: SwipeCloseViewController, UITextFieldDelegate {
             return
         }
         
-        guard textFieldPassword.text!.count > 0 else {
+        guard textFieldEmail.text!.count > 0 else {
             textFieldEmail.shake()
             
             return
@@ -180,7 +170,6 @@ class SignupViewController: SwipeCloseViewController, UITextFieldDelegate {
         activityIndicator.isHidden = false
         viewModel.signupUser(firstName: textFieldFirstName.text!, lastName: textFieldLastName.text!, email: textFieldEmail.text!, password: textFieldPassword.text!)
     }
-    
     
 }
 

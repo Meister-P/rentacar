@@ -64,4 +64,24 @@ class NetworkManager {
         
         task.resume()
     }
+    
+    class func downloadImageAt(url: URL, completion: @escaping ((_ image: UIImage?, _ error: Error?) -> ())) {
+        let session = URLSession(configuration: .default)
+        
+        let downloadImageTask = session.dataTask(with: url) { data, response, error in
+            if let error = error {
+                completion(nil, error)
+                print("Error downloading cat picture: \(error)")
+            } else {
+                if let _ = response as? HTTPURLResponse {
+                    if let imageData = data {
+                        let image = UIImage(data: imageData)
+                        completion(image, nil)
+                    }
+                }
+            }
+        }
+        
+        downloadImageTask.resume()
+    }
 }

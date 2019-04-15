@@ -1,26 +1,16 @@
 PODS:
-  - Bolts/Tasks (1.9.0)
-  - Parse (1.17.2):
-    - Parse/Core (= 1.17.2)
-  - Parse/Core (1.17.2):
-    - Bolts/Tasks (~> 1.9)
   - VeriffSDK (2.0.4)
 
 DEPENDENCIES:
-  - Parse
   - VeriffSDK (~> 2.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Bolts
-    - Parse
     - VeriffSDK
 
 SPEC CHECKSUMS:
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
   VeriffSDK: c9fe64b14ebab9a85aa9d78048146b7f079f6969
 
-PODFILE CHECKSUM: 59dcbf734c6b2879e1de16d1a67f90b8ad342188
+PODFILE CHECKSUM: c10b5cb2e12d97813caceb7ad4dd774bcbea03ad
 
 COCOAPODS: 1.6.1

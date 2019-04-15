@@ -7,31 +7,22 @@
 //
 
 import UIKit
+import CoreData
+import Foundation
 
-class StartupCoordinator: Coordinator {
+class StartupCoordinator: NSObject, Coordinator {
     private weak var rootViewController: StartupViewController!
-
     
     init(viewController: StartupViewController) {
         self.rootViewController = viewController
     }
     
     func start() {
-//        if let user = Auth.auth().currentUser {
-//            // showCarsListView()
-////            showLoginAndSignup()
-//            databaseReference.child("users").child(user.uid).observeSingleEvent(of: .value, with: { (snapshot) in
-//                // Get user value
-//                let value = snapshot.value as? NSDictionary
-//                print("snapshot: \(snapshot)")
-//            }) { (error) in
-//                print(error.localizedDescription)
-//            }
-//        } else {
-//            showLoginAndSignup()
-//        }
-//        
-//        databaseReference = Database.database().reference()
+        if let session = User.sharedUser()?.session, session.isValid {
+            showCarsListView()
+        } else {
+            showLoginAndSignup()
+        }
     }
     
     func showSignupView() {
@@ -47,8 +38,7 @@ class StartupCoordinator: Coordinator {
         }
         
         signupController.viewModel.userSignupFinishedSuccessfully = { [weak self] in
-            
-            self?.rootViewController.dismiss(animated: true) {
+            self?.rootViewController.dismiss(animated: true) { [weak self] in
                 self?.showCarsListView()
             }
         }
@@ -56,7 +46,9 @@ class StartupCoordinator: Coordinator {
     
     func showLoginView() {
         let loginViewController = LoginViewController.getInstance() as! LoginViewController
-        rootViewController.present(loginViewController, animated: true, completion: nil)
+        self.rootViewController.dismiss(animated: true) { [weak self] in
+            self?.rootViewController.present(loginViewController, animated: true, completion: nil)
+        }
         
         loginViewController.closeController = { [weak loginViewController] in
             loginViewController?.dismiss(animated: true) { [weak self] in
@@ -64,7 +56,7 @@ class StartupCoordinator: Coordinator {
             }
         }
         
-        loginViewController.viewModel.userLoggedInSuccessfully = { [weak self] in
+        loginViewController.viewModel.userLoggedInSuccessfully = { [weak self] _ in
             self?.rootViewController.dismiss(animated: true) {
                 self?.showCarsListView()
             }
@@ -85,11 +77,34 @@ class StartupCoordinator: Coordinator {
         rootViewController.present(selectionViewController, animated: true, completion: nil)
     }
     
+    var carNavigationController: UINavigationController?
+    
     private func showCarsListView() {
-        let carsListViewModel = CarsListViewModel()
-        let carsListViewController = CarsListViewController.getInstance() as! CarsListViewController
-        carsListViewModel.viewController = carsListViewController
+        carNavigationController = CarsListViewController.getNavigationController()
+        let carsListViewController = carNavigationController!.viewControllers.first! as! CarsListViewController
+        carNavigationController!.navigationBar.tintColor = RentacarColor
+        carsListViewController.viewModel.carSelected = { [weak self] car in
+            self?.show(car: car)
+        }
+        carsListViewController.viewModel.logoutAction = { [weak self] in
+            self?.logout()
+        }
         
-        rootViewController.present(carsListViewController, animated: true, completion: nil)
+        rootViewController.present(carNavigationController!, animated: true, completion: nil)
+    }
+    
+    private func show(car: Car) {
+        let carViewController = CarViewController.getInstance() as! CarViewController
+        carViewController.viewModel = CarViewModel(car: car)
+        carNavigationController!.pushViewController(carViewController, animated: true)
+        
+        carViewController.viewModel.carBooked = { [weak self] car in
+            
+        }
+    }
+    
+    func logout() {
+        User.sharedUser()!.logout()
+        showLoginAndSignup()
     }
 }

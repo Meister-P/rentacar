@@ -17,8 +17,22 @@
 		4272AACF225B711C00432876 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AACE225B711C00432876 /* Coordinator.swift */; };
 		4272AAD1225B714100432876 /* StartupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAD0225B714100432876 /* StartupCoordinator.swift */; };
 		4272AAD3225B7A6C00432876 /* LoginSignupSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */; };
-		4272AAD5225B805100432876 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4272AAD4225B805100432876 /* GoogleService-Info.plist */; };
 		4272AAD7225B898800432876 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAD6225B898800432876 /* CarsListViewController.swift */; };
+		429FD64E22633D8F00628CCB /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD64D22633D8F00628CCB /* NSManagedObjectContext+Extensions.swift */; };
+		429FD65722633DAF00628CCB /* Rentacar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 429FD64F22633DAF00628CCB /* Rentacar.xcdatamodeld */; };
+		429FD65F22633F0300628CCB /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD65E22633F0300628CCB /* Datastore.swift */; };
+		429FD68022634E8100628CCB /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67722634E8100628CCB /* Session+CoreDataClass.swift */; };
+		429FD68122634E8100628CCB /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67822634E8100628CCB /* Car+CoreDataClass.swift */; };
+		429FD68222634E8100628CCB /* Policy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67922634E8100628CCB /* Policy+CoreDataClass.swift */; };
+		429FD68322634E8100628CCB /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67B22634E8100628CCB /* Car+CoreDataProperties.swift */; };
+		429FD68422634E8100628CCB /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67C22634E8100628CCB /* Session+CoreDataProperties.swift */; };
+		429FD68522634E8100628CCB /* Policy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67D22634E8100628CCB /* Policy+CoreDataProperties.swift */; };
+		429FD68622634E8100628CCB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67E22634E8100628CCB /* User+CoreDataProperties.swift */; };
+		429FD68722634E8100628CCB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD67F22634E8100628CCB /* User+CoreDataClass.swift */; };
+		429FD68A2263A2AE00628CCB /* CarsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD6882263A2AE00628CCB /* CarsListCell.swift */; };
+		429FD68B2263A2AE00628CCB /* CarsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429FD6892263A2AE00628CCB /* CarsListCell.xib */; };
+		429FD68D2263A83D00628CCB /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FD68C2263A83D00628CCB /* CarViewController.swift */; };
+		42D811BB2264B6080020FCD6 /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D811BA2264B6080020FCD6 /* CommonAssets.xcassets */; };
 		42EEE357225B36730038659F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE356225B36730038659F /* AppDelegate.swift */; };
 		42EEE359225B36730038659F /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE358225B36730038659F /* StartupViewController.swift */; };
 		42EEE35C225B36730038659F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EEE35A225B36730038659F /* Main.storyboard */; };
@@ -58,8 +72,22 @@
 		4272AACE225B711C00432876 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4272AAD0225B714100432876 /* StartupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupCoordinator.swift; sourceTree = "<group>"; };
 		4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupSelectionViewController.swift; sourceTree = "<group>"; };
-		4272AAD4225B805100432876 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4272AAD6225B898800432876 /* CarsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
+		429FD64D22633D8F00628CCB /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		429FD65022633DAF00628CCB /* Rentacar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rentacar.xcdatamodel; sourceTree = "<group>"; };
+		429FD65E22633F0300628CCB /* Datastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
+		429FD67722634E8100628CCB /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		429FD67822634E8100628CCB /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		429FD67922634E8100628CCB /* Policy+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Policy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		429FD67B22634E8100628CCB /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		429FD67C22634E8100628CCB /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		429FD67D22634E8100628CCB /* Policy+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Policy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		429FD67E22634E8100628CCB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		429FD67F22634E8100628CCB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		429FD6882263A2AE00628CCB /* CarsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListCell.swift; sourceTree = "<group>"; };
+		429FD6892263A2AE00628CCB /* CarsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListCell.xib; sourceTree = "<group>"; };
+		429FD68C2263A83D00628CCB /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		42D811BA2264B6080020FCD6 /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
 		42EEE353225B36730038659F /* Rentacar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rentacar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EEE356225B36730038659F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EEE358225B36730038659F /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +131,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		429FD64C22633D7400628CCB /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				429FD67622634E8100628CCB /* Model */,
+				429FD65E22633F0300628CCB /* Datastore.swift */,
+				429FD64D22633D8F00628CCB /* NSManagedObjectContext+Extensions.swift */,
+				429FD64F22633DAF00628CCB /* Rentacar.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		429FD67622634E8100628CCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				429FD67A22634E8100628CCB /* System */,
+				429FD67822634E8100628CCB /* Car+CoreDataClass.swift */,
+				429FD67922634E8100628CCB /* Policy+CoreDataClass.swift */,
+				429FD67722634E8100628CCB /* Session+CoreDataClass.swift */,
+				429FD67F22634E8100628CCB /* User+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		429FD67A22634E8100628CCB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				429FD67B22634E8100628CCB /* Car+CoreDataProperties.swift */,
+				429FD67D22634E8100628CCB /* Policy+CoreDataProperties.swift */,
+				429FD67C22634E8100628CCB /* Session+CoreDataProperties.swift */,
+				429FD67E22634E8100628CCB /* User+CoreDataProperties.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		42EEE34A225B36730038659F = {
 			isa = PBXGroup;
 			children = (
@@ -129,21 +191,25 @@
 			isa = PBXGroup;
 			children = (
 				42EEE356225B36730038659F /* AppDelegate.swift */,
-				42EEE358225B36730038659F /* StartupViewController.swift */,
-				4272AAC8225B690200432876 /* LoginViewController.swift */,
-				4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */,
-				4272AAD0225B714100432876 /* StartupCoordinator.swift */,
-				4272AACA225B691800432876 /* SignupViewController.swift */,
-				421252FB225FAE4D00B65147 /* VeriffSession.swift */,
-				42125303225FC65000B65147 /* SwipeCloseViewController.swift */,
 				4272AAD6225B898800432876 /* CarsListViewController.swift */,
-				4272AACC225B6CF500432876 /* Extensions.swift */,
+				429FD68C2263A83D00628CCB /* CarViewController.swift */,
+				429FD6882263A2AE00628CCB /* CarsListCell.swift */,
+				429FD6892263A2AE00628CCB /* CarsListCell.xib */,
 				421252FF225FC0E200B65147 /* Constants.swift */,
 				4272AACE225B711C00432876 /* Coordinator.swift */,
-				42125301225FC10D00B65147 /* NetworkManager.swift */,
-				4272AAD4225B805100432876 /* GoogleService-Info.plist */,
+				4272AACC225B6CF500432876 /* Extensions.swift */,
+				4272AAC8225B690200432876 /* LoginViewController.swift */,
+				4272AAD2225B7A6C00432876 /* LoginSignupSelectionViewController.swift */,
 				42EEE35A225B36730038659F /* Main.storyboard */,
+				42125301225FC10D00B65147 /* NetworkManager.swift */,
+				4272AAD0225B714100432876 /* StartupCoordinator.swift */,
+				4272AACA225B691800432876 /* SignupViewController.swift */,
+				42EEE358225B36730038659F /* StartupViewController.swift */,
+				42125303225FC65000B65147 /* SwipeCloseViewController.swift */,
+				421252FB225FAE4D00B65147 /* VeriffSession.swift */,
+				429FD64C22633D7400628CCB /* Persistence */,
 				42EEE35D225B36750038659F /* Assets.xcassets */,
+				42D811BA2264B6080020FCD6 /* CommonAssets.xcassets */,
 				42EEE35F225B36750038659F /* LaunchScreen.storyboard */,
 				42EEE362225B36750038659F /* Info.plist */,
 			);
@@ -292,9 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EEE361225B36750038659F /* LaunchScreen.storyboard in Resources */,
+				42D811BB2264B6080020FCD6 /* CommonAssets.xcassets in Resources */,
 				42EEE35E225B36750038659F /* Assets.xcassets in Resources */,
+				429FD68B2263A2AE00628CCB /* CarsListCell.xib in Resources */,
 				42EEE35C225B36730038659F /* Main.storyboard in Resources */,
-				4272AAD5225B805100432876 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,16 +391,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Rentacar/Pods-Rentacar-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${PODS_ROOT}/VeriffSDK/Veriff.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Veriff.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,14 +438,27 @@
 				42125300225FC0E200B65147 /* Constants.swift in Sources */,
 				4272AACD225B6CF500432876 /* Extensions.swift in Sources */,
 				4272AAC9225B690200432876 /* LoginViewController.swift in Sources */,
+				429FD68522634E8100628CCB /* Policy+CoreDataProperties.swift in Sources */,
+				429FD65F22633F0300628CCB /* Datastore.swift in Sources */,
+				429FD68A2263A2AE00628CCB /* CarsListCell.swift in Sources */,
+				429FD68422634E8100628CCB /* Session+CoreDataProperties.swift in Sources */,
 				4272AACF225B711C00432876 /* Coordinator.swift in Sources */,
 				42125304225FC65000B65147 /* SwipeCloseViewController.swift in Sources */,
+				429FD68122634E8100628CCB /* Car+CoreDataClass.swift in Sources */,
 				42EEE359225B36730038659F /* StartupViewController.swift in Sources */,
 				4272AACB225B691800432876 /* SignupViewController.swift in Sources */,
 				42EEE357225B36730038659F /* AppDelegate.swift in Sources */,
+				429FD68722634E8100628CCB /* User+CoreDataClass.swift in Sources */,
+				429FD68222634E8100628CCB /* Policy+CoreDataClass.swift in Sources */,
 				4272AAD1225B714100432876 /* StartupCoordinator.swift in Sources */,
 				4272AAD7225B898800432876 /* CarsListViewController.swift in Sources */,
+				429FD68022634E8100628CCB /* Session+CoreDataClass.swift in Sources */,
+				429FD68322634E8100628CCB /* Car+CoreDataProperties.swift in Sources */,
+				429FD68622634E8100628CCB /* User+CoreDataProperties.swift in Sources */,
+				429FD65722633DAF00628CCB /* Rentacar.xcdatamodeld in Sources */,
 				4272AAD3225B7A6C00432876 /* LoginSignupSelectionViewController.swift in Sources */,
+				429FD64E22633D8F00628CCB /* NSManagedObjectContext+Extensions.swift in Sources */,
+				429FD68D2263A83D00628CCB /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +803,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		429FD64F22633DAF00628CCB /* Rentacar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				429FD65022633DAF00628CCB /* Rentacar.xcdatamodel */,
+			);
+			currentVersion = 429FD65022633DAF00628CCB /* Rentacar.xcdatamodel */;
+			path = Rentacar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 42EEE34B225B36730038659F /* Project object */;
 }
