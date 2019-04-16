@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cars</key>
+	<dict>
+		<key>bmw</key>
+		<dict>
+            <key>thumbnailUrl</key>
+            <string>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2013_BMW_328i_%28F30%29_M_Sport_sedan_%282018-11-02%29_01.jpg/220px-2013_BMW_328i_%28F30%29_M_Sport_sedan_%282018-11-02%29_01.jpg</string>
+            <key>imageUrl</key>
+            <string>https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2013_BMW_328i_%28F30%29_M_Sport_sedan_%282018-11-02%29_01.jpg/640px-2013_BMW_328i_%28F30%29_M_Sport_sedan_%282018-11-02%29_01.jpg</string>
+            <key>mark</key>
+            <string>BMW</string>
+            <key>model</key>
+            <string>328</string>
+            <key>priceDay</key>
+            <real>77</real>
+		</dict>
+		<key>mb</key>
+		<dict>
+            <key>thumbnailUrl</key>
+            <string>https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2014_Mercedes-Benz_C200_SE_Executive_Automatic_2.0_Front.jpg/220px-2014_Mercedes-Benz_C200_SE_Executive_Automatic_2.0_Front.jpg</string>
+            <key>imageUrl</key>
+            <string>https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2014_Mercedes-Benz_C200_SE_Executive_Automatic_2.0_Front.jpg/640px-2014_Mercedes-Benz_C200_SE_Executive_Automatic_2.0_Front.jpg</string>
+            <key>mark</key>
+            <string>Mercedes-Benz</string>
+            <key>model</key>
+            <string>C280</string>
+            <key>priceDay</key>
+            <real>74</real>
+		</dict>
+		<key>audi</key>
+		<dict>
+            <key>thumbnailUrl</key>
+            <string>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/2017_Audi_A4_%288W%29_sport_quattro_sedan_%282018-10-19%29_02.jpg/220px-2017_Audi_A4_%288W%29_sport_quattro_sedan_%282018-10-19%29_02.jpg</string>
+            <key>imageUrl</key>
+            <string>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/2017_Audi_A4_%288W%29_sport_quattro_sedan_%282018-10-19%29_02.jpg/640px-2017_Audi_A4_%288W%29_sport_quattro_sedan_%282018-10-19%29_02.jpg</string>
+            <key>mark</key>
+            <string>Audi</string>
+            <key>model</key>
+            <string>A4</string>
+            <key>priceDay</key>
+            <real>69</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

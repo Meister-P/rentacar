@@ -50,10 +50,6 @@ class LoginViewController: SwipeCloseViewController, UITextFieldDelegate {
             self?.activityIndicator.isHidden = true
             self?.showErrorAlert(errorString)
         }
-        
-        viewModel.userLoggedInSuccessfully = { [weak self] _ in
-            self?.activityIndicator.isHidden = true
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

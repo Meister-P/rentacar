@@ -11,6 +11,7 @@
 		42125300225FC0E200B65147 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421252FF225FC0E200B65147 /* Constants.swift */; };
 		42125302225FC10D00B65147 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42125301225FC10D00B65147 /* NetworkManager.swift */; };
 		42125304225FC65000B65147 /* SwipeCloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42125303225FC65000B65147 /* SwipeCloseViewController.swift */; };
+		422F6EE722665322005F1303 /* Cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = 422F6EE622665322005F1303 /* Cars.plist */; };
 		4272AAC9225B690200432876 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AAC8225B690200432876 /* LoginViewController.swift */; };
 		4272AACB225B691800432876 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AACA225B691800432876 /* SignupViewController.swift */; };
 		4272AACD225B6CF500432876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4272AACC225B6CF500432876 /* Extensions.swift */; };
@@ -66,6 +67,7 @@
 		421252FF225FC0E200B65147 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		42125301225FC10D00B65147 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		42125303225FC65000B65147 /* SwipeCloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCloseViewController.swift; sourceTree = "<group>"; };
+		422F6EE622665322005F1303 /* Cars.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cars.plist; sourceTree = "<group>"; };
 		4272AAC8225B690200432876 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4272AACA225B691800432876 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		4272AACC225B6CF500432876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				42EEE358225B36730038659F /* StartupViewController.swift */,
 				42125303225FC65000B65147 /* SwipeCloseViewController.swift */,
 				421252FB225FAE4D00B65147 /* VeriffSession.swift */,
+				422F6EE622665322005F1303 /* Cars.plist */,
 				429FD64C22633D7400628CCB /* Persistence */,
 				42EEE35D225B36750038659F /* Assets.xcassets */,
 				42D811BA2264B6080020FCD6 /* CommonAssets.xcassets */,
@@ -360,6 +363,7 @@
 				42EEE361225B36750038659F /* LaunchScreen.storyboard in Resources */,
 				42D811BB2264B6080020FCD6 /* CommonAssets.xcassets in Resources */,
 				42EEE35E225B36750038659F /* Assets.xcassets in Resources */,
+				422F6EE722665322005F1303 /* Cars.plist in Resources */,
 				429FD68B2263A2AE00628CCB /* CarsListCell.xib in Resources */,
 				42EEE35C225B36730038659F /* Main.storyboard in Resources */,
 			);

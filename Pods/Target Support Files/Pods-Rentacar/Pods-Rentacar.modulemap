@@ -1,0 +1,6 @@
+framework module Pods_Rentacar {
+  umbrella header "Pods-Rentacar-umbrella.h"
+
+  export *
+  module * { export * }
+}

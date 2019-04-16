@@ -25,6 +25,18 @@ class StartupCoordinator: NSObject, Coordinator {
         }
     }
     
+    func showLoginAndSignup() {
+        let selectionViewController = LoginSignupSelectionViewController.getInstance() as! LoginSignupSelectionViewController
+        selectionViewController.loginSelected = { [weak self] in
+            self?.showLoginView()
+        }
+        selectionViewController.signupSelected = { [weak self] in
+            self?.showSignupView()
+        }
+        
+        rootViewController.present(selectionViewController, animated: true, completion: nil)
+    }
+    
     func showSignupView() {
         let signupController = SignupViewController.getInstance() as! SignupViewController
         signupController.closeController = {
@@ -63,20 +75,6 @@ class StartupCoordinator: NSObject, Coordinator {
         }
     }
     
-    // MARK: - Private
-    
-    private func showLoginAndSignup() {
-        let selectionViewController = LoginSignupSelectionViewController.getInstance() as! LoginSignupSelectionViewController
-        selectionViewController.loginSelected = { [weak self] in
-            self?.showLoginView()
-        }
-        selectionViewController.signupSelected = { [weak self] in
-            self?.showSignupView()
-        }
-        
-        rootViewController.present(selectionViewController, animated: true, completion: nil)
-    }
-    
     var carNavigationController: UINavigationController?
     
     private func showCarsListView() {
@@ -105,6 +103,9 @@ class StartupCoordinator: NSObject, Coordinator {
     
     func logout() {
         User.sharedUser()!.logout()
-        showLoginAndSignup()
+        
+        rootViewController.dismiss(animated: true) { [weak self] in
+            self?.showLoginAndSignup()
+        }
     }
 }
