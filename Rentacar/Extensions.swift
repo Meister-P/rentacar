@@ -34,6 +34,10 @@ extension Date {
         return self.addingTimeInterval(60 * Double(minutes))
     }
     
+    func dateInNumberOfDays(_ days: Int) -> Date {
+        return self.addingTimeInterval(60 * 60 * 24 * Double(days))
+    }
+    
     var isFuture: Bool {
         let now = Date()
         

@@ -96,8 +96,8 @@ class StartupCoordinator: NSObject, Coordinator {
         carViewController.viewModel = CarViewModel(car: car)
         carNavigationController!.pushViewController(carViewController, animated: true)
         
-        carViewController.viewModel.carBooked = { [weak self] car in
-            
+        carViewController.viewModel.carBooked = { [weak self] car, startDate, endDate in
+            print("car: \(car) - \(startDate) - \(endDate) ")
         }
     }
     

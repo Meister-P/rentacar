@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Rentacar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42EEE366225B36750038659F"
+               BuildableName = "RentacarTests.xctest"
+               BlueprintName = "RentacarTests"
+               ReferencedContainer = "container:Rentacar.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

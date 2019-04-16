@@ -304,23 +304,25 @@ extension DataStore {
     }
     
     func createCars() {
-        let carsFile = Bundle.main.path(forResource: "Cars", ofType: "plist")!
-        let cars = NSDictionary(contentsOfFile: carsFile) as! [String: [String: [String: AnyObject]]]
-        
-        if let carsDict = cars["cars"] {
-            for carDictKey in carsDict.keys {
-                if let car = carsDict[carDictKey] {
-                    let newCar = addObject(Car.self)
-                    newCar.imageUrl = car["imageUrl"] as? String
-                    newCar.thumbnailUrl = car["thumbnailUrl"] as? String
-                    newCar.mark = car["mark"] as? String
-                    newCar.model = car["model"] as? String
-                    newCar.priceDay = NSDecimalNumber(decimal: (car["priceDay"] as! NSNumber).decimalValue)
+        if fetchAllEntitiesOfType(Car.self).count == 0 {
+            let carsFile = Bundle.main.path(forResource: "Cars", ofType: "plist")!
+            let cars = NSDictionary(contentsOfFile: carsFile) as! [String: [String: [String: AnyObject]]]
+            
+            if let carsDict = cars["cars"] {
+                for carDictKey in carsDict.keys {
+                    if let car = carsDict[carDictKey] {
+                        let newCar = addObject(Car.self)
+                        newCar.imageUrl = car["imageUrl"] as? String
+                        newCar.thumbnailUrl = car["thumbnailUrl"] as? String
+                        newCar.mark = car["mark"] as? String
+                        newCar.model = car["model"] as? String
+                        newCar.priceDay = NSDecimalNumber(decimal: (car["priceDay"] as! NSNumber).decimalValue)
+                    }
                 }
             }
+            
+            save()
         }
-        
-        save()
     }
 }
 
