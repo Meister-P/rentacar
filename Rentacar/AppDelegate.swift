@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             mainCoordinator.start()
         }
         
-        dataStore.deleteAllData()
         dataStore.createCars()
         
         return true

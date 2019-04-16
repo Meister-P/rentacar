@@ -18,8 +18,8 @@ class SignupViewModel: NSObject, VeriffDelegate {
             requestFinishedWithErrorString?("A user with this email already exists")
         } else {
             dataStore.createNewUserWith(firstName: firstName, lastName: lastName, email: email, password: password)
-            userSignupFinishedSuccessfully?()
-//            self.startVeriffSession(firstName: firstName, lastName: lastName)
+//            userSignupFinishedSuccessfully?()
+            self.startVeriffSession(firstName: firstName, lastName: lastName)
         }
     }
     
@@ -106,12 +106,6 @@ class SignupViewController: SwipeCloseViewController, UITextFieldDelegate {
         let swipeDown = UISwipeGestureRecognizer(target: self, action: .dismiss)
         swipeDown.direction = .down
         view.addGestureRecognizer(swipeDown)
-        
-        // debug
-        textFieldFirstName.text = "Mikk"
-        textFieldLastName.text = "Pavelson"
-        textFieldEmail.text = "mikk.pavelson@gmail.com"
-        textFieldPassword.text = "password"
     }
     
     override func viewDidAppear(_ animated: Bool) {
